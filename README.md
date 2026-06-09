@@ -288,8 +288,8 @@ For issues, questions, or suggestions:
 ## Contributors
 
 **Core Development Team**: 
-- Sri Gokul Prazath
 - Moshiur Rahman Rimu
+- Sri Gokul Prazath
 - Sifat Morshed
 - Bryant
 - Armandarma
@@ -309,5 +309,5 @@ This project is developed for the University of Auckland and follows institution
 ---
 
 **Last Updated**: June 2026  
-**Maintainer**: Gokul Prazath  
+**Maintainer**: Moshiur Rahman Rimu  
 **Status**: Active Development
