@@ -1,0 +1,40 @@
+import { useState } from "react";
+import { askQuestion } from "./api";
+
+function App() {
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const submit = async () => {
+    setLoading(true);
+    const a = await askQuestion(question);
+    setAnswer(a);
+    setLoading(false);
+  };
+
+  return (
+    <div style={{ padding: 20 }}>
+      <h1>RAG Assistant</h1>
+
+      <input
+        style={{ width: "80%", padding: 10 }}
+        value={question}
+        onChange={(e) => setQuestion(e.target.value)}
+        placeholder="Ask something..."
+      />
+
+      <button onClick={submit} style={{ marginLeft: 10 }}>
+        Ask
+      </button>
+
+      {loading && <p>Thinking…</p>}
+
+      <pre style={{ marginTop: 20, whiteSpace: "pre-wrap" }}>
+        {answer}
+      </pre>
+    </div>
+  );
+}
+
+export default App;
