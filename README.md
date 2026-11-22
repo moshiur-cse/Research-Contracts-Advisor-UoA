@@ -3,6 +3,7 @@
 ## Overview
 
 The **Research Contracts Advisor** is an intelligent agentic AI system designed to assist researchers at the University of Auckland in understanding, analyzing, and navigating complex research contract agreements. This tool leverages advanced AI models combined with Retrieval-Augmented Generation (RAG) to classify contracts into seven agreement types and provide detailed clause-level analysis and highlighting.
+Demo URL: https://moshiur-cse.github.io/Research-Contracts-Advisor-UoA/
 
 ### Key Features
 
